@@ -1,0 +1,20 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "ai-newsletter-backend",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-07-03",
+	"observability": {
+		"enabled": true
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "newsletter-subscriptions",
+			"database_id": "temp-id-will-be-replaced"
+		}
+	]
+}
